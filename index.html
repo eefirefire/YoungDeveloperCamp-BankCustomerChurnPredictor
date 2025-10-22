@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Churn Predictor</title>
+</head>
+
+<body>
+    <h1>Properties Of Customer</h1>
+    <form action="/predict" method="post">
+        
+        <p>
+            <label for="CreditScore">CreditScore</label>
+            <input type="number" id="CreditScore" name="CreditScore">
+        </p>
+
+        <p>
+            <label for="Age">Age</label>
+            <input type="number" id='Age' name="Age">
+        </p>
+
+        <p>
+            <label for="Tenure">Tenure</label>
+            <input type="number" id="Tenure" name="Tenure">
+        </p>
+
+        <p>
+            <label for="Balance">Balance</label>
+            <input type="number" id="Balance" name="Balance">
+        </p>
+
+        <p>
+            <label for="NumOfProducts">NumOfProducts</label>
+            <input type="number" id="NumOfProducts" name="NumOfProducts">
+        </p>
+
+        <p>
+            <input type="checkbox" id="HasCrCard" name="HasCrCard" value="1">
+            <label for="HasCrCard">Has Credit Card?</label>
+        </p>
+
+        <p>
+            <input type="checkbox" id="IsActiveMember" name="IsActiveMember" value="1">
+            <label for="IsActiveMember">Is an Active Member?</label>
+        </p>
+
+        <p>
+            <label for="EstimatedSalary">EstimatedSalary</label>
+            <input type="number" id="EstimatedSalary" name="EstimatedSalary">
+        </p>
+        
+        <p>
+            <label for="PointsEarned">Points Earned</label>
+            <input type="number" id="PointsEarned" name="PointsEarned">
+        </p>
+        
+        <p>
+            <label for="Geography">Geography</label>
+            <select name="Geography" id="Geography">
+                <option value="France">France</option>
+                <option value="Spain">Spain</option>
+                <option value="Germany">Germany</option>
+            </select>
+        </p>
+
+        <p>
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="Gender" value="Male" checked>
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="Gender" value="Female">
+            <label for="female">Female</label>
+        </p>
+
+        <p>
+            <label for="CardType">Card Type</label>
+            <select name="CardType" id="CardType">
+                <option value="SILVER">Silver</option>
+                <option value="GOLD">Gold</option>
+                <option value="PLATINUM">Platinum</option>
+                <option value="DIAMOND">Diamond</option>
+            </select>
+        </p>
+        
+        <p>
+            <input type="submit" value="Predict Churn">
+        </p>
+        
+    </form>
+</body>
+
+</html>
